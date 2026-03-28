@@ -175,10 +175,21 @@ Edit `config/config.yaml`. Any OpenRouter model works:
 
 ```yaml
 agent:
-  model: google/gemini-2.0-flash-001    # Free
-  # model: anthropic/claude-sonnet-4-6  # Paid, higher quality
-  # model: meta-llama/llama-4-scout     # Free
+  model: google/gemini-2.0-flash-001    # Free — can save, but weak on classification & summaries
+  # model: anthropic/claude-sonnet-4-6  # Paid (~$0.01/article) — recommended, reliable tool use
+  # model: meta-llama/llama-4-scout     # Free — may not support tool calling
 ```
+
+> **Which model should I use?**
+>
+> | Model | Cost | Tool calling | Classification | Summary quality |
+> |-------|------|-------------|---------------|----------------|
+> | Gemini 2.0 Flash | Free | Works sometimes | Unreliable | Basic |
+> | Claude Sonnet 4.6 | ~$0.01/article | Reliable | Accurate | High quality |
+> | Llama 4 Scout/Maverick | Free | Doesn't work | N/A | N/A |
+> | Local 7B models | Free | Doesn't work | N/A | N/A |
+>
+> **Recommendation:** Start with Gemini Flash (free) to test the setup. If you want reliable auto-classification and high-quality summaries, add $5 credit to OpenRouter and switch to Claude Sonnet.
 
 ### Add categories
 
