@@ -1,6 +1,6 @@
 # Telegram to Obsidian
 
-Send articles from your phone via Telegram. AI summarizes, tags, and saves them to your Obsidian vault automatically. Free.
+Save anything from your phone to Obsidian via Telegram. AI auto-summarizes, tags, and categorizes. Free.
 
 **[繁體中文版](#繁體中文)**
 
@@ -9,18 +9,41 @@ Send articles from your phone via Telegram. AI summarizes, tags, and saves them 
 ## What It Does
 
 ```
-You see an article on your phone
-  → Copy & send to Telegram bot
+You see something worth saving on your phone
+  → Send to Telegram bot + say "save to ob"
   → AI processes it (summarize, tag, categorize)
   → Saved as structured markdown in your Obsidian vault
   → Synced via Dropbox/iCloud/Git
+  → Want to find it later? Just ask the bot.
 ```
 
 No need to open Obsidian. No need to sit at your computer. Just send and forget.
 
+## What You Can Save
+
+| Type | How to use | Example |
+|------|-----------|---------|
+| Articles | Copy the text, send + "save to ob" | Facebook posts, blog articles, news |
+| URLs | Send the link + "save to ob" | Any web article link |
+| YouTube videos | Send link + description, "save to ob" | Tutorial videos, talks |
+| Tweets / Threads | Copy the thread text, send + "save to ob" | Twitter/X insights |
+| Podcast notes | Type your takeaways, send + "save to ob" | Key points from episodes |
+| Book highlights | Paste highlights, send + "save to ob" | Kindle highlights, reading notes |
+| Quick ideas | Just type your thought, send + "save to ob" | Shower thoughts, business ideas |
+| Meeting notes | Type or paste notes, send + "save to ob" | Action items, decisions |
+
+## Find It Later
+
+Don't remember where you saved something? Just ask:
+
+- "Find my notes about AI" → searches your vault
+- "What did I save about marketing last week?" → finds it
+- "Show me that article about Dropbox CTO" → instant recall
+
 ## Features
 
 - **AI-powered**: Auto-generates summary, tags, and category — not just raw copy-paste
+- **Search & recall**: Ask the bot to find any saved note by keyword
 - **Free AI model**: Uses Google Gemini Flash via OpenRouter (free tier)
 - **PARA structure**: Auto-organizes into Projects / Areas / Resources / Archive
 - **Works offline**: Runs on your own machine via Docker, your data stays local
@@ -220,13 +243,35 @@ MIT
 
 ## 繁體中文
 
-# Telegram 存文章到 Obsidian
+# Telegram 存進 Obsidian
 
-用手機 Telegram 傳文章，AI 自動整理、分類、存進 Obsidian。免費。
+手機上看到任何值得存的東西，傳到 Telegram，AI 自動整理、分類、存進 Obsidian。免費。
+
+## 可以存什麼？
+
+| 類型 | 怎麼用 | 範例 |
+|------|--------|------|
+| 文章 | 複製內容，傳給 bot + 「存進 ob」 | FB 貼文、部落格、新聞 |
+| 網址 | 傳連結 + 「存進 ob」 | 任何網頁文章連結 |
+| YouTube 影片 | 傳連結 + 影片描述，「存進 ob」 | 教學影片、演講 |
+| Twitter/X | 複製推文串，「存進 ob」 | 有價值的推文討論 |
+| Podcast 筆記 | 打你的重點，「存進 ob」 | 節目重點整理 |
+| 書摘 | 貼上劃線內容，「存進 ob」 | Kindle 劃線、讀書筆記 |
+| 靈感 | 直接打字，「存進 ob」 | 突然想到的點子、商業構想 |
+| 會議紀錄 | 打或貼筆記，「存進 ob」 | 行動項目、決策紀錄 |
+
+## 之後找得到嗎？
+
+直接問 bot 就好：
+
+- 「幫我找 ob 裡關於 AI 的筆記」→ 搜尋你的 vault
+- 「我之前存過一篇行銷的文章」→ 幫你找到
+- 「那篇 Dropbox 技術長的文章在哪」→ 秒找
 
 ## 功能
 
 - **AI 驅動**：自動摘要、標籤、分類，不是簡單複製貼上
+- **搜尋回溯**：問 bot 就能找到任何存過的筆記
 - **免費 AI**：使用 Google Gemini Flash（透過 OpenRouter 免費額度）
 - **PARA 結構**：自動歸類到 Projects / Areas / Resources / Archive
 - **資料在地**：透過 Docker 在你的電腦上運行，資料不外傳
