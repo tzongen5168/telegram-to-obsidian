@@ -341,4 +341,12 @@ docker exec openclaw-gateway openclaw pairing approve telegram <CODE>
 不夠。7B 模型會幻覺（假裝執行指令但實際沒有寫入檔案）。建議用 Gemini Flash（免費）或 14B 以上的本地模型。
 
 ### 免費模型有限制嗎？
-OpenRouter 的 Gemini Flash 有每分鐘請求數限制，但日常存文章完全夠用。
+
+| 模型 | 費用 | 寫入檔案 | 自動分類 | 摘要品質 |
+|------|------|---------|---------|---------|
+| Gemini 2.0 Flash | 免費 | 有時成功 | 不穩定 | 基本 |
+| Claude Sonnet 4.6 | ~$0.01/篇 | 穩定 | 準確 | 高品質 |
+| Llama 4 Scout/Maverick | 免費 | 不支援 | N/A | N/A |
+| 本地 7B 模型 | 免費 | 不支援 | N/A | N/A |
+
+**建議：** 先用 Gemini Flash（免費）測試流程。如果需要穩定的自動分類和高品質摘要，在 OpenRouter 充值 $5 並切換到 Claude Sonnet。
