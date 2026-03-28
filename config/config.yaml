@@ -1,0 +1,17 @@
+gateway:
+  mode: local
+  port: 18789
+  bind: 0.0.0.0
+agent:
+  provider: openai
+  model: google/gemini-2.0-flash-001
+  baseUrl: https://openrouter.ai/api/v1
+  apiKey: env:OPENROUTER_API_KEY
+telegram:
+  token: env:TELEGRAM_BOT_TOKEN
+  dm:
+    systemPrompt: |
+      You are a knowledge management assistant. Your job is to help the user save articles and notes to their Obsidian vault.
+      When the user sends content and says "save to ob" or "存進 ob", process it and save to /obsidian/.
+      Always respond in the same language the user uses.
+      Be direct and concise.

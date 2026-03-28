@@ -1,0 +1,36 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openrouter/google/gemini-2.0-flash-001"
+      },
+      "workspace": "/home/node/.openclaw/workspace"
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "streaming": "partial"
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "lan",
+    "auth": {
+      "mode": "token"
+    }
+  },
+  "tools": {
+    "profile": "full",
+    "allow": [
+      "group:runtime",
+      "group:fs"
+    ],
+    "exec": {
+      "timeoutSec": 30,
+      "notifyOnExit": false
+    }
+  }
+}
